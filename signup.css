@@ -1,0 +1,41 @@
+#masai{
+    font-size: 60px;
+    text-align: center;
+    font-weight: 550;
+}
+#signup{
+    text-align: center;
+    padding-top: 20px;
+}
+#container{
+    height: 500px;
+    width: 400px;
+    margin: auto;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+#form>input{
+    height: 40px;
+    width: 400px;
+   border-radius: 7px;
+}
+#cred{
+    font-weight: 800;
+    background-color: rgb(151, 151, 141);
+    border: 0ch;
+    margin-top: 50px;
+    border-radius: 7px;
+}
+#signin{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#cred:hover{
+    color: white;
+    background-color: black;
+    cursor: pointer;
+}
+#signin>h3>a{
+    text-decoration: none;
+}

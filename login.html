@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="login.css">
+
+</head>
+<body>
+    <div id="main">
+        <h2>Sign in</h2>
+        <form id="form" action="">
+            <p>Email</p>
+            <input id="email" type="text" placeholder="Enter email">
+            <p>Password</p>
+            <input id="pass" type="text" placeholder="Enter password">
+            <input id="SIGN" type="submit" value="SIGN IN">
+        </form>
+        <div id="signup">
+            <p>Don't have an account?</p>
+            <h3><a href="signup.html">Sign up</a></h3>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    var userData = JSON.parse(localStorage.getItem("saveSignup"))
+    // console.log(userData)
+    
+    document.querySelector("#form").addEventListener("submit",checkFunc)
+
+    function checkFunc(){
+
+        var iemail=form.email.value;
+        var ipass=form.pass.value;
+        var print=false ;
+        
+        for(var i=0 ;i<userData.length ;i++){
+            if(iemail==userData[i].input_email && ipass==userData[i].input_pass){
+                
+                window.location.href="/mens.html"
+                alert("Login Succesful\n\n=====>Go To Homepage")
+                
+
+                print=true ;
+                break;
+            }
+            if(print==false){
+                alert("UserId/password invalid !!") ;
+                window.location.href="/signup.html"
+            }
+        }
+    }
+</script>

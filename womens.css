@@ -1,0 +1,23 @@
+body{
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-template-rows: auto;
+    gap: 20px;
+}
+p{
+    font-size: small;
+}
+p+div{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+}
+h2,h1{
+    text-decoration: line-through;
+}
+
+body>div{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    padding: 10px;
+    border-radius: 10px;
+}
